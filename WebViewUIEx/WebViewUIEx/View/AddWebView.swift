@@ -23,6 +23,9 @@ struct AddWebView: View {
                 }
                 Section(header: Text("주소명")) {
                     TextField("주소명", text: $addURL)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                        .keyboardType(.URL)
                 }
             }
             

@@ -57,7 +57,7 @@ struct ListView: View {
                 AddWebView(webModel: webModel, isShowingAddSheet: $isShowingAddSheet)
             }
             .sheet(isPresented: $isShowingSafiriSheet) {
-                SafariWebView(siteURL: web.urlString)
+                SafariWebView(siteURL: $web.urlString)
             }
         }
     }

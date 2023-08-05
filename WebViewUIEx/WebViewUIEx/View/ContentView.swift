@@ -26,14 +26,15 @@ import SwiftUI
  웹 뷰 접속 시 history 기록으로 남음
  
  - 추가할 내용 -
- history 정렬 및 ui 개선
- userdefaults 등을 이용해 데이터 저장
- Observed 쓰는거 environment로 바꿔보기
+1. history 정렬 및 ui 개선
+2. userdefaults 등을 이용해 데이터 저장
+3. Observed 쓰는거 environment로 바꿔보기
  
+ - 수정할 내용 -
+ 23.07.05
+1. search view에서 직접 검색해서 들어갈 경우 디폴트인 애플주소로 자꾸 가짐 (o)
+2. textField 입력 시 자동완성, 첫 글자 대문자되는거 막기 (o)
  */
- /*
-  search view에서 직접 검색해서 들어갈 경우 디폴트인 애플주소로 자꾸 가짐
-  */
 
 struct ContentView: View {
     @ObservedObject private var webModel = WebModel()
